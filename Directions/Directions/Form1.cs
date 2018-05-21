@@ -16,5 +16,10 @@ namespace Directions
         {
             InitializeComponent();
         }
+
+        private void btnGetDirections_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }
