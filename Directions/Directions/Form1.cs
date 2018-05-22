@@ -23,9 +23,13 @@ namespace Directions
 
             letsGo.SetCurrentLocation(txtFrom.Text);
 
+            letsGo.SetDestination(txtTo.Text);
+
             string route;
 
             route = letsGo.GetDirections();
+
+            txtDirections.Text = route;
         }
     }
 }
