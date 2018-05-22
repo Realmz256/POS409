@@ -19,7 +19,13 @@ namespace Directions
 
         private void btnGetDirections_MouseClick(object sender, MouseEventArgs e)
         {
+            Navigator letsGo = new Navigator();
 
+            letsGo.SetCurrentLocation(txtFrom.Text);
+
+            string route;
+
+            route = letsGo.GetDirections();
         }
     }
 }
