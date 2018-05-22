@@ -35,10 +35,6 @@
             this.lblDirections = new System.Windows.Forms.Label();
             this.txtDirections = new System.Windows.Forms.TextBox();
             this.btnGetDirections = new System.Windows.Forms.Button();
-            this.lblAvoid = new System.Windows.Forms.Label();
-            this.txtAvoid = new System.Windows.Forms.TextBox();
-            this.lblInclude = new System.Windows.Forms.Label();
-            this.txtInclude = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblFrom
@@ -79,7 +75,7 @@
             // 
             this.lblDirections.AutoSize = true;
             this.lblDirections.ForeColor = System.Drawing.Color.White;
-            this.lblDirections.Location = new System.Drawing.Point(16, 323);
+            this.lblDirections.Location = new System.Drawing.Point(17, 189);
             this.lblDirections.Name = "lblDirections";
             this.lblDirections.Size = new System.Drawing.Size(54, 13);
             this.lblDirections.TabIndex = 4;
@@ -87,7 +83,7 @@
             // 
             // txtDirections
             // 
-            this.txtDirections.Location = new System.Drawing.Point(16, 340);
+            this.txtDirections.Location = new System.Drawing.Point(17, 206);
             this.txtDirections.Multiline = true;
             this.txtDirections.Name = "txtDirections";
             this.txtDirections.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -96,7 +92,7 @@
             // 
             // btnGetDirections
             // 
-            this.btnGetDirections.Location = new System.Drawing.Point(232, 279);
+            this.btnGetDirections.Location = new System.Drawing.Point(233, 145);
             this.btnGetDirections.Name = "btnGetDirections";
             this.btnGetDirections.Size = new System.Drawing.Size(85, 23);
             this.btnGetDirections.TabIndex = 6;
@@ -104,50 +100,12 @@
             this.btnGetDirections.UseVisualStyleBackColor = true;
             this.btnGetDirections.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnGetDirections_MouseClick);
             // 
-            // lblAvoid
-            // 
-            this.lblAvoid.AutoSize = true;
-            this.lblAvoid.ForeColor = System.Drawing.Color.White;
-            this.lblAvoid.Location = new System.Drawing.Point(13, 135);
-            this.lblAvoid.Name = "lblAvoid";
-            this.lblAvoid.Size = new System.Drawing.Size(81, 13);
-            this.lblAvoid.TabIndex = 7;
-            this.lblAvoid.Text = "Avoid on Route";
-            // 
-            // txtAvoid
-            // 
-            this.txtAvoid.Location = new System.Drawing.Point(16, 162);
-            this.txtAvoid.Name = "txtAvoid";
-            this.txtAvoid.Size = new System.Drawing.Size(258, 20);
-            this.txtAvoid.TabIndex = 8;
-            // 
-            // lblInclude
-            // 
-            this.lblInclude.AutoSize = true;
-            this.lblInclude.ForeColor = System.Drawing.Color.White;
-            this.lblInclude.Location = new System.Drawing.Point(16, 196);
-            this.lblInclude.Name = "lblInclude";
-            this.lblInclude.Size = new System.Drawing.Size(89, 13);
-            this.lblInclude.TabIndex = 9;
-            this.lblInclude.Text = "Include on Route";
-            // 
-            // txtInclude
-            // 
-            this.txtInclude.Location = new System.Drawing.Point(16, 223);
-            this.txtInclude.Name = "txtInclude";
-            this.txtInclude.Size = new System.Drawing.Size(258, 20);
-            this.txtInclude.TabIndex = 10;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(544, 625);
-            this.Controls.Add(this.txtInclude);
-            this.Controls.Add(this.lblInclude);
-            this.Controls.Add(this.txtAvoid);
-            this.Controls.Add(this.lblAvoid);
+            this.ClientSize = new System.Drawing.Size(544, 475);
             this.Controls.Add(this.btnGetDirections);
             this.Controls.Add(this.txtDirections);
             this.Controls.Add(this.lblDirections);
@@ -171,10 +129,6 @@
         private System.Windows.Forms.Label lblDirections;
         private System.Windows.Forms.TextBox txtDirections;
         private System.Windows.Forms.Button btnGetDirections;
-        private System.Windows.Forms.Label lblAvoid;
-        private System.Windows.Forms.TextBox txtAvoid;
-        private System.Windows.Forms.Label lblInclude;
-        private System.Windows.Forms.TextBox txtInclude;
     }
 }
 
