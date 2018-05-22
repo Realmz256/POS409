@@ -10,9 +10,17 @@ namespace Directions
     {
         public string startPoint;
         public string endPoint;
+        public string listedDirections;
         //is the API key a field in the class?
 
         //Methods
+        public Navigator(string start, string end, string directions)
+        {
+            startPoint = start;
+            endPoint = end;
+            listedDirections = directions;
+
+        }
 
         public void SetCurrentLocation(string startPoint)
         {
@@ -25,10 +33,14 @@ namespace Directions
             //Read text from To field
         }
 
-
+        public string displayDirections()
+        {
+            return listedDirections;
+        }
         public string GetDirections(string startPoint, string endPoint)
         {
             //I think this involves the API to determine the directions?
+            return listedDirections;
         }
              
     }
