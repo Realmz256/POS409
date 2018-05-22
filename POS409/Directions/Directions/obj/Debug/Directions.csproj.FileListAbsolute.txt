@@ -1,0 +1,5 @@
+C:\Users\Shaughn\Source\Repos\POS409\Directions\Directions\obj\Debug\Directions.csprojResolveAssemblyReference.cache
+C:\Users\Shaughn\Source\Repos\POS409\Directions\Directions\obj\Debug\Directions.Form1.resources
+C:\Users\Shaughn\Source\Repos\POS409\Directions\Directions\obj\Debug\Directions.Properties.Resources.resources
+C:\Users\Shaughn\Source\Repos\POS409\Directions\Directions\obj\Debug\Directions.csproj.GenerateResource.Cache
+C:\Users\Shaughn\Source\Repos\POS409\Directions\Directions\obj\Debug\Directions.csproj.CoreCompileInputs.cache
