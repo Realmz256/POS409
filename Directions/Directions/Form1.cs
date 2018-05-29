@@ -22,7 +22,8 @@ namespace Directions
 
         private void btnGetDirections_MouseClick(object sender, MouseEventArgs e)
         {
-            var query = directions.Where(o => (o.startPoint.ToString() == textFrom.Text && o.endPoint.ToString() == textTo.Text)); 
+            var query = directions.Where(o => (CleanString(o.startPoint.ToString()) == CleanString(textFrom.Text) && 
+            CleanString(o.endPoint.ToString()) == CleanString(textTo.Text))); 
             /*
             Navigator letsGo = new Navigator();
 

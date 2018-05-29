@@ -3,3 +3,4 @@ Home,Vacation,Purchase a ticket and drive 36 miles East to the airpoirt
 Work,Home,Travel 20 miles S on Highway 15
 Vacation,Home,Vacation too good staying here
 Vacation,Work,work does not pay enough
+Work,Vacation,Directions don't matter as long as I'm not at work
