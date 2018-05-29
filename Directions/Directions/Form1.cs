@@ -22,20 +22,34 @@ namespace Directions
 
         private void btnGetDirections_MouseClick(object sender, MouseEventArgs e)
         {
-            var query = directions.Where(o => (CleanString(o.startPoint.ToString()) == CleanString(textFrom.Text) && 
-            CleanString(o.endPoint.ToString()) == CleanString(textTo.Text))); 
-            /*
-            Navigator letsGo = new Navigator();
+            try
+            {
+                var query = directions.Where(o => (CleanString(o.startPoint.ToString()) == CleanString(textFrom.Text) &&
+                CleanString(o.endPoint.ToString()) == CleanString(textTo.Text)));
+                /*
+                Navigator letsGo = new Navigator();
 
-            letsGo.SetCurrentLocation(txtFrom.Text);
+                letsGo.SetCurrentLocation(txtFrom.Text);
 
-            letsGo.SetDestination(txtTo.Text);*/
+                letsGo.SetDestination(txtTo.Text);*/
 
-            string route;
+                string route;
 
-            route = query.ElementAt(0).displayDirections();
+                route = query.ElementAt(0).displayDirections();
 
-            txtDirections.Text = route;
+                txtDirections.Text = route;
+            }
+            catch (Exception)
+            {
+                
+                txtDirections.Text = "Invalid input please try again.";
+            }
+            finally
+            {
+                textFrom.Text = "";
+                textTo.Text = "";
+
+            }
         }
 
         private void populateData()
