@@ -1,5 +1,5 @@
 ﻿Home,Work,Travel 20 miles N on highway 15
 Home,Vacation,Purchase a ticket and drive 36 miles East to the airpoirt
 Work,Home,Travel 20 miles S on Highway 15
-Vacation,Home,Vacation to good staying here
+Vacation,Home,Vacation too good staying here
 Vacation,Work,work does not pay enough

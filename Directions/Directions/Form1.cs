@@ -22,7 +22,7 @@ namespace Directions
 
         private void btnGetDirections_MouseClick(object sender, MouseEventArgs e)
         {
-            var query = directions.Where(o => (o.startPoint.ToString() == txtFrom.Text && o.endPoint.ToString() == txtTo.Text)); 
+            var query = directions.Where(o => (o.startPoint.ToString() == textFrom.Text && o.endPoint.ToString() == textTo.Text)); 
             /*
             Navigator letsGo = new Navigator();
 
@@ -50,6 +50,18 @@ namespace Directions
                 }
             }
 
+        }
+
+        public static string CleanString(string dirtyString)
+        {
+            dirtyString = dirtyString.Trim();
+            dirtyString = dirtyString.ToLower();
+            HashSet<char> removeChars = new HashSet<char>(" ?&^$#@!()+-,:;<>’\'-_*");
+            StringBuilder result = new StringBuilder(dirtyString.Length);
+            foreach (char c in dirtyString)
+                if (!removeChars.Contains(c)) // prevent dirty chars
+                    result.Append(c);
+            return result.ToString();
         }
     }
 }

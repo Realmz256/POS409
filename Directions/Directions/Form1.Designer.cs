@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.lblFrom = new System.Windows.Forms.Label();
-            this.txtFrom = new System.Windows.Forms.TextBox();
             this.lblTo = new System.Windows.Forms.Label();
-            this.txtTo = new System.Windows.Forms.TextBox();
             this.lblDirections = new System.Windows.Forms.Label();
             this.txtDirections = new System.Windows.Forms.TextBox();
             this.btnGetDirections = new System.Windows.Forms.Button();
+            this.textFrom = new System.Windows.Forms.TextBox();
+            this.textTo = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblFrom
@@ -47,13 +47,6 @@
             this.lblFrom.TabIndex = 0;
             this.lblFrom.Text = "From:";
             // 
-            // txtFrom
-            // 
-            this.txtFrom.Location = new System.Drawing.Point(16, 40);
-            this.txtFrom.Name = "txtFrom";
-            this.txtFrom.Size = new System.Drawing.Size(258, 20);
-            this.txtFrom.TabIndex = 1;
-            // 
             // lblTo
             // 
             this.lblTo.AutoSize = true;
@@ -63,13 +56,6 @@
             this.lblTo.Size = new System.Drawing.Size(23, 13);
             this.lblTo.TabIndex = 2;
             this.lblTo.Text = "To:";
-            // 
-            // txtTo
-            // 
-            this.txtTo.Location = new System.Drawing.Point(16, 101);
-            this.txtTo.Name = "txtTo";
-            this.txtTo.Size = new System.Drawing.Size(258, 20);
-            this.txtTo.TabIndex = 3;
             // 
             // lblDirections
             // 
@@ -100,18 +86,32 @@
             this.btnGetDirections.UseVisualStyleBackColor = true;
             this.btnGetDirections.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btnGetDirections_MouseClick);
             // 
+            // textFrom
+            // 
+            this.textFrom.Location = new System.Drawing.Point(16, 30);
+            this.textFrom.Name = "textFrom";
+            this.textFrom.Size = new System.Drawing.Size(213, 20);
+            this.textFrom.TabIndex = 7;
+            // 
+            // textTo
+            // 
+            this.textTo.Location = new System.Drawing.Point(16, 91);
+            this.textTo.Name = "textTo";
+            this.textTo.Size = new System.Drawing.Size(213, 20);
+            this.textTo.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(544, 475);
+            this.Controls.Add(this.textTo);
+            this.Controls.Add(this.textFrom);
             this.Controls.Add(this.btnGetDirections);
             this.Controls.Add(this.txtDirections);
             this.Controls.Add(this.lblDirections);
-            this.Controls.Add(this.txtTo);
             this.Controls.Add(this.lblTo);
-            this.Controls.Add(this.txtFrom);
             this.Controls.Add(this.lblFrom);
             this.Name = "Form1";
             this.Text = "Need Directions?";
@@ -123,12 +123,12 @@
         #endregion
 
         private System.Windows.Forms.Label lblFrom;
-        private System.Windows.Forms.TextBox txtFrom;
         private System.Windows.Forms.Label lblTo;
-        private System.Windows.Forms.TextBox txtTo;
         private System.Windows.Forms.Label lblDirections;
         private System.Windows.Forms.TextBox txtDirections;
         private System.Windows.Forms.Button btnGetDirections;
+        private System.Windows.Forms.TextBox textFrom;
+        private System.Windows.Forms.TextBox textTo;
     }
 }
 
