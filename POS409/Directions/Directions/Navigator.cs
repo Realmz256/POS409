@@ -40,7 +40,7 @@ namespace Directions
         {
             return listedDirections;
         }
-        public string GetDirections(string startPoint, string endPoint)
+        public string GetDirections(string origin, string destination)
         {
             //I think this involves the API to determine the directions?
             return listedDirections;
