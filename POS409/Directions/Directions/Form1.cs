@@ -24,8 +24,8 @@ namespace Directions
         {
             try
             {
-                var query = directions.Where(o => (CleanString(o.startPoint.ToString()) == CleanString(textFrom.Text) &&
-                CleanString(o.endPoint.ToString()) == CleanString(textTo.Text)));
+                var query = directions.Where(o => (CleanString(o.origin.ToString()) == CleanString(textFrom.Text) &&
+                CleanString(o.destination.ToString()) == CleanString(textTo.Text)));
                 /*
                 Navigator letsGo = new Navigator();
 

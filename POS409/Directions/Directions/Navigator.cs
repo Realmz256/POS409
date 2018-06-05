@@ -8,17 +8,18 @@ namespace Directions
 {
     class Navigator
     {
-        public string startPoint;
-        public string endPoint;
-        public string listedDirections;
-        public string keyAPI = "AIzaSyC-eFtOEhwXhlFvtwWLepZXLyKP440k6Dk";
+        public string origin;
+        public string destination;
+        public string listedDirections;  //should this be removed, and a new class created for route?
+        //The class route would inherit Navigator and then be used to create an array from the JSON file that is sent back from Google?
+        public string key = "AIzaSyC-eFtOEhwXhlFvtwWLepZXLyKP440k6Dk";
         //is the API key a field in the class?
 
         //Methods
         public Navigator(string start, string end, string directions)
         {
-            startPoint = start;
-            endPoint = end;
+            origin = start;
+            destination = end;
             listedDirections = directions;
 
         }
