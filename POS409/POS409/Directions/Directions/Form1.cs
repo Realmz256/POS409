@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
 
 namespace Directions
 {
@@ -24,8 +27,8 @@ namespace Directions
         {
             try
             {
-                var query = directions.Where(o => (CleanString(o.startPoint.ToString()) == CleanString(textFrom.Text) &&
-                CleanString(o.endPoint.ToString()) == CleanString(textTo.Text)));
+                var query = directions.Where(o => (CleanString(o.origin.ToString()) == CleanString(textFrom.Text) &&
+                CleanString(o.destination.ToString()) == CleanString(textTo.Text)));
                 /*
                 Navigator letsGo = new Navigator();
 
